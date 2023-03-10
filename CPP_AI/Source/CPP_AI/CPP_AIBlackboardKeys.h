@@ -3,8 +3,8 @@
 #include "UOBject/NameTypes.h"
 #include "Containers/UnrealString.h"
 
-
 namespace bb_keys
 {
-	TCHAR const* const TargetLocation = TEXT("TargetLocation");
+TCHAR const* const TargetLocation = TEXT("TargetLocation");
+TCHAR const* const CanSeePlayer = TEXT("CanSeePlayer");
 }

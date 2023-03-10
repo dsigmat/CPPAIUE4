@@ -13,11 +13,12 @@
 UCLASS(Blueprintable)
 class CPP_AI_API UFindRandomLocation : public UBTTask_BlackboardBase
 {
-	GENERATED_BODY()
+    GENERATED_BODY()
 public:
-	UFindRandomLocation(FObjectInitializer const& ObjectInitializer);
-	EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent& OwnerComponent, uint8* NodeMemory);
+    UFindRandomLocation(FObjectInitializer const& ObjectInitializer);
+    EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent& OwnerComponent, uint8* NodeMemory);
+
 private:
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Search", meta = (AllowPrivateAccess = "true"))
-		float SearchRadius = 1500.0f;
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Search", meta = (AllowPrivateAccess = "true"))
+    float SearchRadius = 1500.0f;
 };
